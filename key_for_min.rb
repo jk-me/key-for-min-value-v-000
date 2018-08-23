@@ -5,5 +5,10 @@ def key_for_min_value(name_hash)
   min=1000
   min_key=''
   name_hash.each {|key,val|
-    if val<
+    if val<min 
+      min=val 
+      min_key=key 
+    end 
+  }
+  min_key
 end
